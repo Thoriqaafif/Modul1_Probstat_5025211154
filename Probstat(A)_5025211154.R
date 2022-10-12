@@ -56,7 +56,9 @@ paste("Varian =", varian)
 x <- 2
 v <- 10
 #a
-print("Fungsi Probabilitas = ")
+#a
+prob <- dchisq(x, v)
+paste("Peluang =", prob)
 #b
 hist(rchisq(100,v),main='Histogram Distribusi Chi
      Square',xlab='x')
@@ -69,7 +71,8 @@ paste("Varian =", varian)
 #Nomor 5
 lambda <- 3
 #a
-print("Fungsi Probabilitas = ")
+prob <- rexp(1, rate = lamda)
+paste("Peluang", prob)
 #b
 hist(rexp(10,lambda),main='Histogram Distribusi
      Eksponensial dengan n = 10')
