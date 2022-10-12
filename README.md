@@ -26,7 +26,7 @@ Untuk mencari mean distribusi geometrik, saya pertama menggunakan rgeom() untuk 
 Hasil pada poin a dengan b memiliki kemiripan hingga 3 angka di belakang koma. Hal ini menunjukkan bahwa peluang teoritis, dengan menggunakan pdf, dapat mencerminkan peluang eksperimental yang diambil dengan data random (terutama jika volume data besar).
 - Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama\
 Untuk membuat histogram, saya menggunakan fungsi hist(x,main='Histogram Distribusi Geometrik',ylab='Frekuensi'). x merupakan sekumpulan data random yang didapat dari proses b, parameter main digunakan untuk memberi judul histogram, dan ylab merupakan nama label sumbu y. Didapatkan histogram sebagai berikut:\
-
+    ![1b](https://github.com/Thoriqaafif/picture/blob/main/Screenshot%202022-10-12%20212746.png)
 - Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik.\
 Pada distribusi geometrik, nilai rataan dan varian mengikuti rumus q/p dan q/(p^2) sehingga digunakan kode berikut untuk mencarinya:
     ```R
@@ -51,7 +51,7 @@ Kasus di atas merupakan salah satu bentuk distribusi binomial. Dengan begitu, ni
     ```
     Maka, didapatkan hasil P(X=4) = 0.218199401946101
 - Gambarkan grafik histogram berdasarkan kasus tersebut.\
-insert ss
+    ![1b](https://github.com/Thoriqaafif/picture/blob/main/Screenshot%202022-10-12%20212825.png)
 - Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Binomial.\
 Nilai rataan dan varian dari distribusi binomial didapat dengan rumus n*p dan n*p*q. Maka, kedua nilai tersebut dapat dicari dengan kode berikut:
     ```R
@@ -76,7 +76,7 @@ Kasus di atas merupakan kasus distribusi poisson sehingga peluangnya dapat dicar
     ```
     Maka, didapatakn P(X=6) = 0.128120143864584
 - simulasikan dan buatlah histogram kelahiran 6 bayi akan lahir di rumah sakit ini  selama setahun (n = 365)\
-insert ss
+    ![1b](https://github.com/Thoriqaafif/picture/blob/main/Screenshot%202022-10-12%20212846.png)
 - Bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan\
 Poin a menunjukkan peluang lahirnya 6 bayi dalam sehari sedangkan poin b menunjukkan histogram frekuensi hari di mana bayi lahir sebanyak x. Jika dilihat, histogram menunjukkan bahwa kelahiran 6 bayi terjadi sekitar 20 kali. Dengan n=365, maka kelahiran 6 bayi sebesar 0,05479. Nilai tersebut agak jauh dari poin a, namun terdapat pengaruh jumlah data juga yang hanya 365 hari.
 - Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Poisson.\
@@ -103,7 +103,7 @@ Fungsi probabilitas distribusi Chi-Square dapat dicari dengan menggunakan fungsi
     ```
     Didapatkan hasil Peluang = 0.00766415502440505.
 - Histogram dari Distribusi Chi-Square dengan 100 data random.\
-insert SS
+    ![1b](https://github.com/Thoriqaafif/picture/blob/main/Screenshot%202022-10-12%20212903.png)
 - Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Chi-Square.\
 Nilai rataan dan varian distribusi Chi-Square bernilai v dan 2*v. Maka, saya hanya memasukkan nilai v dan 2*v ke dalam variabel rataan dan varian seperti berikut:
     ```R
@@ -127,10 +127,14 @@ Probabilitas dari dsitribusi exponensial bisa didapatkan menggunakan fungsi dexp
     ```
     Didapatkan hasil Peluang = 0.149361205103592
 - Histogram dari Distribusi Exponensial untuk 10, 100, 1000 dan 10000 bilangan random\
-n = 10
-n = 100
-n = 1000
-n = 10000
+    n = 10
+    ![1b](https://github.com/Thoriqaafif/picture/blob/main/Screenshot%202022-10-12%20212925.png)
+    n = 100
+    ![1b](https://github.com/Thoriqaafif/picture/blob/main/Screenshot%202022-10-12%20212937.png)
+    n = 1000
+    ![1b](https://github.com/Thoriqaafif/picture/blob/main/Screenshot%202022-10-12%20212948.png)
+    n = 10000
+    ![1b](https://github.com/Thoriqaafif/picture/blob/main/Screenshot%202022-10-12%20213004.png)
 - Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Exponensial untuk n = 100 dan λ = 3\
 Untuk mencari nilai rataan dan varian distribusi exponensial, saya pertama mengenerate data random sebanyak 100 dengan menggunakan fungsi rexp() dan dimasukkan ke dalam variabel set. Setelah itu, rataan dan varian dicari dengan menggunakan fungsi mean(set) dan var(set).
     ```R
@@ -177,7 +181,9 @@ Pertama, saya mengenerate 100 data random dengan fungsi rnorm dan disimpan pada 
     z_scores
     plot(data)
     ```
+    Plot Data
+    ![1b](https://github.com/Thoriqaafif/picture/blob/main/Screenshot%202022-10-12%20213039.png)
 - Generate Histogram dari Distribusi Normal dengan breaks 50 \
-insert ss
+    ![1b](https://github.com/Thoriqaafif/picture/blob/main/Screenshot%202022-10-12%20213057.png)
 - Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.\
 Saya menggunakan data random yang telah digenerate pada poin a.
