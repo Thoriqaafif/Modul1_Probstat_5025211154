@@ -1,4 +1,12 @@
 # Modul1_Probstat_5025211154
 ## Nomor 1
-a.\tBerapa peluang penyurvei bertemu x = 3 orang yang tidak menghadiri acara vaksinasi sebelum keberhasilan pertama ketika p = 0,20 dari populasi menghadiri acara vaksinasi?\
-\t\tKasus tersebut merupakan salah satu bentuk distribusi geometrik sehingga P(X=3) dapat 
+>Berapa peluang penyurvei bertemu x = 3 orang yang tidak menghadiri acara vaksinasi sebelum keberhasilan pertama ketika p = 0,20 dari populasi menghadiri acara vaksinasi?
+- Kasus tersebut merupakan salah satu bentuk distribusi geometrik sehingga P(X=3) dapat dicari dengan menggunakan fungsi bawaan r, yaitu dgeom. Fungsi dgeom memiliki parameter x, nilai random variabelnya, dan p, yaitu peluang berhasil. Saya menggunakan kode sebagai berikut:
+    ```R
+    #a
+    p <- 0.2
+    q <- 1-p
+    x <- 3
+    fx <- dgeom(x, p, log=FALSE)
+    paste("P(X=3) =", fx)
+    ```
