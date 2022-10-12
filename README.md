@@ -10,5 +10,5 @@
     fx <- dgeom(x, p, log=FALSE)
     paste("P(X=3) =", fx)
     ```
-    Didapatkan output:
+    Didapatkan output:\
     ![1a](https://github.com/Thoriqaafif/picture/blob/main/Screenshot%202022-10-12%20200832.png)
