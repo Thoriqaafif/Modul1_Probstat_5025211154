@@ -1,8 +1,8 @@
 # Nomor 1
+#a
 p <- 0.2
 q <- 1-p
 x <- 3
-#a
 fx <- dgeom(x, p, log=FALSE)
 paste("P(X=3) =", fx)
 #b
@@ -53,10 +53,9 @@ paste("Rataan =", rataan)
 paste("Varian =", varian)
 
 #Nomor 4
+#a
 x <- 2
 v <- 10
-#a
-#a
 prob <- dchisq(x, v)
 paste("Peluang =", prob)
 #b
@@ -69,10 +68,10 @@ paste("Rataan =", rataan)
 paste("Varian =", varian)
 
 #Nomor 5
-lambda <- 3
 #a
-prob <- rexp(1, rate = lamda)
-paste("Peluang", prob)
+lambda <- 3
+prob <- dexp(1, rate = lambda)
+paste("Peluang =", prob)
 #b
 hist(rexp(10,lambda),main='Histogram Distribusi
      Eksponensial dengan n = 10')
